@@ -1,0 +1,17 @@
+// program to get a random item from an array
+
+function getRandomItem(arr) {
+
+    // get random index value
+    let randomIndex = Math.floor(Math.random() * arr.length);
+
+    // get random item
+    let item = arr[randomIndex];
+
+    return item;
+}
+
+let array = [1, 'hello', 5, 8];
+
+let result = getRandomItem(array);
+console.log(result);
